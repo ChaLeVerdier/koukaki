@@ -1,0 +1,17 @@
+//main.scss
+
+@import "abstracts/abstracts";
+
+//  navigation
+@import "components/components";
+
+// animations
+@import "animations";
+
+// Layouts
+@import "front-page";
+@import "clouds";
+@import "slider";
+@import "oscars";
+@import "footer";
+@import "header";

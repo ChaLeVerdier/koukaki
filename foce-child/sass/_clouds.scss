@@ -1,0 +1,35 @@
+
+#place {
+     background-image: url("../images/place-bg.png") !important;
+   }
+   
+ .clouds_container {
+     display: flex;
+     justify-content: flex-end; /* Aligne les nuages à droite */
+     padding-bottom: 300px; /* Distance du bord supérieur */
+     padding-left: 320px; /* Distance du bord droit */
+ }
+ 
+ .clouds {
+     display: flex;
+     flex-direction: column;
+     gap: 65px; /* Espace de 65px entre les nuages */
+ }
+ 
+ .big_cloud {
+     background-image: url('../images/big_cloud.png');
+     height: 122px;
+     width: 316px;
+     filter: blur(12px);
+     transition: transform 0.8s ease; /* Ajuste la durée et le timing de la transition */
+ }
+ 
+ .little_cloud {
+     background-image: url('../images/little_cloud.png');
+     height: 55px;
+     width: 142px;
+     filter: blur(12px);
+     margin-left: -260px; /* Décale le petit nuage de 200px supplémentaires vers la gauche */
+     transition: transform 0.8s ease; /* Ajuste la durée et le timing de la transition */
+ }
+ 

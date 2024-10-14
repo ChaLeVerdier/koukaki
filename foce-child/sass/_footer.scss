@@ -1,0 +1,37 @@
+.site-footer {
+  position: relative;
+  display: flex;
+  padding-top: 18em;
+  padding-bottom: 1em;
+  overflow: hidden;
+
+  &::before {
+    content:  none !important; // Cha : modif du footer
+      }
+  &::after { 
+    content: none !important; // Cha : modif du footer
+      }
+    }
+
+ul{
+  &::after{
+    @extend .rotating-flower;
+  }
+}
+
+
+@media all and (max-width: #{$breakpoint__small_tablet}) {
+  .site-footer {
+    &::before {
+      content: '';
+    }
+  }
+}
+@media all and (max-width: #{$breakpoint__large_phone}) {
+  .site-footer {
+    &::after {
+      content: '';
+
+    }
+  }
+}
